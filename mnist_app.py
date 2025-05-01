@@ -20,7 +20,7 @@ st.markdown("손으로 쓴 숫자 이미지를 업로드하면 AI가 어떤 숫�
 def load_mnist_model():
     """사전 훈련된 MNIST 모델을 로드합니다."""
     try:
-        model = load_model("mnist_classifier.h5")
+        model = load_model("model/mnist_classifier.h5")
         return model
     except Exception as e:
         st.error(f"모델 로드 중 오류 발생: {e}")
